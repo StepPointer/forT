@@ -10,9 +10,19 @@
     height: 40px;
 
     &__social-media-links-container {
+      font-size: 22px;
+
+      .list-item {
+        padding-right: 15px;
+      }
     }
 
     &__phone-numbers-container {
+      letter-spacing: 0;
+
+      .list-item{
+        padding-left: 15px;
+      }
     }
   }
 
@@ -22,11 +32,15 @@
     list-style : none;
 
     &-item {
-      padding: 0 20px 0 0;
       text-decoration: none;
       color: @background-color;
 
+      &:hover {
+        color: @icon-hovering-color;
+      }
+
       &__text {
+        font-weight: bold;
         font-family: @room-bold;
       }
     }

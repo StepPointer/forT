@@ -7,7 +7,6 @@
         <link rel="stylesheet/less" type="text/css" href="styles/clear-all.less" />
         <link rel="stylesheet/less" type="text/css" href="styles.less" />
         <link rel="stylesheet/less" type="text/css" href="styles/fonts.less"/>
-        <script src="scripts/RouterService.js"></script>
     </head>
     <body>
         <header>
@@ -15,22 +14,17 @@
                 <div class="container header">
                     <div class="header__social-media-links-container">
                         <ul class="list">
-                            <li><a class="icon-let list-item" href=""></a></li>
-                            <li><a class="icon-facebook2 list-item" href=""></a></li>
-                            <li><a class="icon-instagram list-item" href=""></a></li>
-                            <li><a class="icon-youtube2 list-item" href=""></a></li>
+                            <li><a class="icon-let list-item" href="mailto:"></a></li>
+                            <li><a class="icon-facebook2 list-item" href="https://www.facebook.com/NVPatriot/"></a></li>
+                            <li><a class="icon-instagram list-item" href="https://instagram.com/nevidomyi_patriot?igshid=1mn5f5yw2l3pc"></a></li>
+                            <li><a class="icon-youtube2 list-item" href="https://www.youtube.com/channel/UCgHw0tAvhSepimGMByID7RQ"></a></li>
                         </ul>
                     </div>
                     <div class="header__phone-numbers-container">
                         <ul class="list">
                             <li>
-                                <a class="icon-phone list-item" href="tel:+30961231221">
-                                    <span class="list-item__text">+3 (096) 123 1221</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="icon-phone list-item" href="tel:+30961231221">
-                                    <span class="list-item__text">+3 (859) 123 1221</span>
+                                <a class="icon-phone list-item" href="tel:+380997674914">
+                                    <span class="list-item__text">+38 (099) 767 4914</span>
                                 </a>
                             </li>
                         </ul>
@@ -67,14 +61,18 @@
 
         <section>
             <div class="container">
-                <div id="dynamic-view">
-
-                </div>
+                <div id="dynamic-view"></div>
             </div>
         </section>
 
 
+        <script>
+            $(function(){
+                $("#dynamic-view").load("pages/Home.html");
+            });
+        </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
+        <script src="scripts/RouterService.js"></script>
     </body>
 </html>

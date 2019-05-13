@@ -6,19 +6,19 @@ window.onload =  () => {
       }
     };
 
-    const dynamicView = document.getElementById('dynamic-view');
+    const dynamicView = $('#dynamic-view');
     let router = new Router('router', [
         {
           path: '/',
           name: 'home'
         },
         {
-          path: '/about-us',
+          path: '/about',
           name: 'About us'
         },
         {
-          path: '/statutory-law',
-          name: 'Statutory law'
+          path: '/documents',
+          name: 'Documents'
         },
         {
           path: '/events',
@@ -36,29 +36,27 @@ window.onload =  () => {
 
     switch (currentPath) {
         case '/': {
-            //load home page
-            // dynamicView.innerHTML = 'HomePage';
+            dynamicView.load("pages/home-page/HomePage.html");
             break;
         }
-        case '/about-us': {
-            // dynamicView.innerHTML = 'about';
+        case '/about': {
+            dynamicView.load("pages/About.html");
             break;
         }
-
-        case '/statutory-law': {
-            // dynamicView.innerHTML = 'HomePage';
+        case '/documents': {
+            dynamicView.load("pages/Documents.html");
             break;
         }
         case '/events': {
-            // dynamicView.innerHTML = 'HomePage';
+            dynamicView.load("pages/Events.html");
             break;
         }
         case '/join': {
-            // dynamicView.innerHTML = 'HomePage';
+            dynamicView.load("pages/Join.html");
             break;
         }
         default: {
-            // dynamicView.innerHTML = 'HomePage';
+            dynamicView.load("pages/Home.html");
             break;
         }
     }
