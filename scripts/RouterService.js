@@ -34,29 +34,29 @@ window.onload =  () => {
 
     let currentPath = window.location.pathname;
 
-    switch (currentPath) {
+    switch ('/about') {
         case '/': {
             dynamicView.load("pages/home-page/HomePage.html");
             break;
         }
         case '/about': {
-            dynamicView.load("pages/About.html");
+            dynamicView.load("pages/about-page/AboutPage.html");
             break;
         }
         case '/documents': {
-            dynamicView.load("pages/Documents.html");
+            dynamicView.load("pages/documents-page/DocumentsPage.html");
             break;
         }
         case '/events': {
-            dynamicView.load("pages/Events.html");
+            dynamicView.load("pages/events-page/EventsPage.html");
             break;
         }
         case '/join': {
-            dynamicView.load("pages/Join.html");
+            dynamicView.load("pages/join-page/JoinPage.html");
             break;
         }
         default: {
-            dynamicView.load("pages/Home.html");
+            dynamicView.load("pages/home-page/HomePage.html");
             break;
         }
     }

@@ -1,4 +1,5 @@
 @import "../../styles/colors";
+@import "../../styles/variables";
 
 .home-page {
   color: @text-color;
@@ -7,6 +8,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  font-family: @aa-duke-fill;
+  text-transform: uppercase;
 
   &__text {
     &--first-line {
@@ -17,7 +20,8 @@
     }
   }
 
-  &__logo {
-
+  &__image {
+    height: 240px;
+    padding: 20px;
   }
 }

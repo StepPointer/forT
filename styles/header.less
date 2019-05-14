@@ -1,16 +1,19 @@
 @import './colors';
+@import './variables';
 
 .header-wrapper {
   background-color: @orange-color;
+  font-size: @header-font-size;
 
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 40px;
+
 
     &__social-media-links-container {
       font-size: 22px;
+      padding: 5px;
 
       .list-item {
         padding-right: 15px;
@@ -19,6 +22,7 @@
 
     &__phone-numbers-container {
       letter-spacing: 0;
+      padding: 5px 0;
 
       .list-item{
         padding-left: 15px;
@@ -44,5 +48,15 @@
         font-family: @room-bold;
       }
     }
+  }
+}
+
+@media @smartphones-small-screen {
+  .header {
+    flex-direction: column;
+  }
+
+  .list-item {
+    padding: 15px;
   }
 }

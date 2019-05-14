@@ -1,8 +1,11 @@
 @import './colors';
+@import './variables';
 
 .navigation-container {
   display: flex;
   flex-wrap: nowrap;
+  padding-bottom: 10px;
+  font-size: @navigation-font-size;
 
   &__logo {
     width: 20%;
@@ -10,6 +13,11 @@
     justify-content: center;
     align-items: center;
     padding: 15px;
+
+    &-image {
+      height: 120px;
+      width: unset;
+    }
   }
 
   &__navigation-menu {
@@ -31,7 +39,9 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      text-decoration: none;
       align-items: center;
+      padding: 10px;
 
       &__image {
         width: 52px;
@@ -41,6 +51,11 @@
       &__text {
         color: @text-color;
         font-family: @room-bold;
+        word-break: keep-all;
+      }
+
+      &:hover {
+        text-shadow: 0 0  2px @white;
       }
     }
   }
@@ -66,5 +81,24 @@
     width: auto;
     height: 40px;
     padding-top: 22px;
+  }
+}
+
+@media @smartphones {
+  .navigation-container {
+    flex-direction: column;
+    align-items: center;
+
+    &__logo {
+      width: 100%;
+    }
+
+    &__navigation-menu {
+      width: 100%;
+    }
+
+    .list {
+      flex-wrap: wrap;
+    }
   }
 }

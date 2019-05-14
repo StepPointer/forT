@@ -2,6 +2,48 @@
 @import 'styles/colors';
 @import 'styles/variables';
 
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: @room-thin;
+}
+
+body {
+  background-color: @background-color;
+  font-size: @dynamic-content-font-size;
+  line-height: 30px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 0 15%;
+
+  &--site-content {
+    padding-bottom: 5%;
+  }
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+@media @smartphones {
+  .container {
+    padding: 0 5%;
+  }
+}
+
+@media @tablets {
+  .container {
+    padding: 0 10%;
+  }
+}
+
 //components
 @import 'styles/header';
 @import 'styles/navigation-menu';
@@ -12,26 +54,4 @@
 @import 'pages/documents-page/DocumentsPage';
 @import 'pages/events-page/EventsPage';
 @import 'pages/join-page/JoinPage';
-
-html, body {
-  padding: 0;
-  margin: 0;
-  font-family: @room-thin;
-}
-
-body {
-  background-color: @background-color;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  padding: 0 15%;
-}
-
-
-
 
