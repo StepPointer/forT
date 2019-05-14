@@ -1,0 +1,36 @@
+@import '../../styles/colors';
+@import '../../styles/variables';
+
+.documents-page {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+
+  .document-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 200px;
+    max-height: 200px;
+    min-width: 25%;
+    max-width: 25%;
+
+    &:last-child {
+      justify-self: self-start;
+    }
+
+    &__icon-wrapper{
+
+    }
+
+    &__icon {
+      height: 50px;
+      width: unset;
+    }
+
+    &__name-wrapper{
+
+    }
+  }
+}
