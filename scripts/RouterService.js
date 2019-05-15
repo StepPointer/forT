@@ -48,7 +48,10 @@ window.onload =  () => {
             break;
         }
         case '/events': {
-            dynamicView.load("pages/events-page/EventsPage.html");
+            dynamicView.load("pages/events-page/EventsPage.html", ()=>{
+                $(window).ready(()=>{$(window).trigger('event-page-init');
+                });
+            });
             break;
         }
         case '/join': {

@@ -4,11 +4,11 @@ _pasteComponent = (view, page) => {
     view.load(page);
 };
 
-window.onload =  () => {
-  const header = $('#header');
-  const navigation = $('#navigation');
+$(window).ready(() => {
+  let header = $('#header');
+  let navigation = $('#navigation');
 
   _pasteComponent(header, "components/header.html");
   _pasteComponent(navigation, "components/navigation.html");
-};
+});
 
