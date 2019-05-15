@@ -11,13 +11,16 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 2%;
     min-height: 200px;
     max-height: 200px;
-    min-width: 25%;
-    max-width: 25%;
+    min-width: 21%;
+    max-width: 21%;
+    color: @main-color;
 
-    &:last-child {
-      justify-self: self-start;
+    &:hover {
+      text-shadow: 0 0  2px @icon-hovering-color;
+      color: @icon-hovering-color;
     }
 
     &__icon-wrapper{
@@ -31,6 +34,33 @@
 
     &__name-wrapper{
 
+    }
+  }
+}
+
+@media @smartphones {
+  .documents-page {
+    .document-item {
+      min-width: 29%;
+      max-width: 29%;
+    }
+  }
+}
+
+@media @smartphones-small-screen {
+  .documents-page {
+    .document-item {
+      min-width: 46%;
+      max-width: 46%;
+    }
+  }
+}
+
+@media @smartphones-extra-small-screen {
+  .documents-page {
+    .document-item {
+      min-width: 100%;
+      max-width: 100%;
     }
   }
 }
