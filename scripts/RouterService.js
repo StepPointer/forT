@@ -34,7 +34,7 @@ window.onload =  () => {
 
     let currentPath = window.location.pathname;
 
-    switch ('/') {
+    switch ('/join') {
         case '/': {
             dynamicView.load("pages/home-page/HomePage.html");
             break;

@@ -1,0 +1,85 @@
+@import "../../styles/colors";
+@import "../../styles/variables";
+
+.join-page {
+  color: @text-color;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  &__heading {
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-text {
+
+      &--main-color {
+        color: @main-color;
+      }
+    }
+
+    &-sub-text {
+
+    }
+
+    &-logo-wrapper {
+
+    }
+
+    &-logo-image {
+      width: auto;
+      padding: 20px;
+    }
+  }
+  &__form-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 60%;
+
+    &-input-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 10px;
+    }
+    &-radio-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 10px;
+    }
+    &-text {
+      &--red-color {
+        color: @red;
+      }
+    }
+    &-input {
+      width: 99%;
+    }
+    &-radio {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &-button {
+      min-height: 20px;
+
+      &-wrapper {
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      &-text {
+        padding: 2%;
+      }
+    }
+  }
+}
